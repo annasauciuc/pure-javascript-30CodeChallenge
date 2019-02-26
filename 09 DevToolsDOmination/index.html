@@ -9,7 +9,12 @@
 <body>
 
     <p onClick="makeGreen()">×BREAK×DOWN×</p>
-
+    <style>
+        .changeClass {
+            color: #BADA55;
+            font-size: 50px;
+        }
+    </style>
     <script>
         const dogs = [{
             name: 'Snickers',
@@ -21,8 +26,7 @@
 
         function makeGreen() {
             const p = document.querySelector('p');
-            p.style.color = '#BADA55';
-            p.style.fontSize = '50px';
+            p.classList.toggle("changeClass");
         }
 
         // Regular
